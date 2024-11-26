@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home Cooking: Home</title>
+        <link rel="stylesheet" href="cooking.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Cooking at home made easy">
+        <meta name="author" content="Aaron Willis">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <!-- start of header -->
+        <header>
+        <h1>Home Cooking</h1>
+        <p>A guide to creating your own recipes at home!</p>
+        </header>
+        <!-- start of navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="spices.html">Spices</a></li>
+                <li><a href="foodsandflavors.html">Foods and Flavors</a></li>
+                <li class="active"><a href="cookbook.html">Free Cookbook</a></li>
+            </ul>
+        
+        </nav>
+        <!-- start of main -->
+        <main>
+        <h1>Get a Free Cookbook!</h1>
+        <form method="get" class="myForm" action="thankyou.html">
+        
+        <fieldset>   
+        <legend>Customer Information</legend>    
+        <label>First Name*<input type="text" name="fname" required></label>    
+        <label>Last Name*<input type="text" name="lname" required></label>    
+        <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+        <label>Email*<input type="email" name="email" required placeholder="example@example.com"></label>
+        </fieldset>     
+        
+        <fieldset>
+        <legend>Would you like your book signed by the Author?</legend>    
+        <label><input type="radio" name="method" value="Yes" required>Yes</label>
+        <label><input type="radio" name="method" value="No">No</label>   
+        </fieldset>    
+            
+        <fieldset>
+        <legend>Which books would you like to receive?</legend>    
+        <label><input type="checkbox" name="Spices" value="chosen"> Spices</label>
+        <label><input type="checkbox" name="Cooking Techniques" value="chosen"> Cooking Techniques</label>
+        <label><input type="checkbox" name="At Home Recipes" value="chosen"> At Home Recipes</label>
+        <label><input type="checkbox" name="All of the above" value="chosen"> All of the above</label>
+        </fieldset>
+            
+        <fieldset>
+        <label>Preferred Delivery Method
+        <select name="time" required>
+        <option value="" disabled selected>Please Select</option>
+        <option value="pickup">Pickup at your local bookstore</option>
+        <option value="delivery">Delivered to your address</option> 
+        <option value="digital copy">Receive a digital copy</option>
+        </select>
+        </label>
+            </fieldset>
+            
+            <label>Delivery Address
+            <textarea name="comments" placeholder="Enter your delivery address here"></textarea>
+            </label>
+            
+            
+            
+            
+            
+            
+            
+        
+            
+            
+        <input type="submit" value="Send Request">
+            
+        </form>
+
+            
+        </main>
+        <!-- start of footer -->
+        <footer>
+        <p>&copy; 2024 &bull; Aaron Willis &bull; <a href="mailto:aaron@gamil.com">Email Us</a></p>
+            <address>
+        Home Cooking<br>
+        123 cooking Lane<br>
+        Flavor Town, USA<br>
+        Phone: (123) 456-7890
+            </address>
+        </footer>
+    
+    </body>
+
+</html>
